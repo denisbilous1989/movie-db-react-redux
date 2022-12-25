@@ -1,0 +1,85 @@
+h3 {
+  margin: 15px 7.5px 7.5px 7.5px;
+}
+
+.popular {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  .movie {
+    width: calc(25% - 15px);
+    margin: 0 7.5px 7.5px 7.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    min-height: 350px;
+    padding-bottom: 25px;
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+      }
+
+
+    .movie_content {
+      margin: 20px 0 15px 0;
+      position: relative;
+
+      .date {
+        color: green;
+        font-size: 12px;
+      }
+
+      .raiting {
+        background-color: darkblue;
+        color: blue;
+        position: absolute;
+        top: -40px;
+        left: 5%;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 5px;
+      }
+
+      .green{
+        color: darkgreen;
+      }
+      .orange{
+        color: orange;
+      }
+      .red{
+        color: red;
+      }
+    }
+
+    .btn {
+    padding: 5px 15px;
+    border: none;
+    background: linear-gradient(to right, rgb(30, 213, 169) 0%, rgb(1, 180, 228) 100%);
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: darkblue;
+    }
+    }
+ }
+}
+
+// .green{
+//   color: green;
+// }
+// .orange{
+//   color: orange;
+// }
+// .red{
+//   color: red;
+// }

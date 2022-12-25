@@ -1,0 +1,66 @@
+// @import "./variables.scss";
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgb(3,37,65);
+  height: 64px;
+  width: 100%;
+
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .navigation {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow: visible;
+
+         .logo {
+           display: block;
+           margin-right: 16px;
+           width: 154px;
+           height: 20px;
+           color: #fff;
+           font-weight: 600;
+
+            img {
+              display: block;
+              width: 100%;
+              outline: none;
+            }
+         }
+
+         .menu {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          height: 40px;
+          position: relative;
+
+          .menu_item {
+            margin-right: 14px;
+
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
